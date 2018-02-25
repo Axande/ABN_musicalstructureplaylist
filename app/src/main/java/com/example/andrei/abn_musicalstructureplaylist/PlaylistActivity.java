@@ -27,7 +27,6 @@ public class PlaylistActivity extends AppCompatActivity {
         setContentView(R.layout.activity_playlist);
 
         generatePlaylist();
-
         setListeners();
     }
 
@@ -55,14 +54,10 @@ public class PlaylistActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 SongClass item = (SongClass) parent.getItemAtPosition(position);
-
-//                Toast.makeText(getApplicationContext(),String.valueOf(position) , Toast.LENGTH_SHORT).show();
-
                 Intent intent = new Intent(getApplicationContext(), SongActivity.class);
                 intent.putExtra("object_code", String.valueOf(item));
                 startActivity(intent);
             }
         });
-
     }
 }

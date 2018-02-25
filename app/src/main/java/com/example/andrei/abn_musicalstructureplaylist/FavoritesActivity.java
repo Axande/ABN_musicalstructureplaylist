@@ -25,8 +25,8 @@ public class FavoritesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_playlist);
-        generatePlaylist();
 
+        generatePlaylist();
         setListeners();
     }
 
@@ -62,9 +62,6 @@ public class FavoritesActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 SongClass item = (SongClass) parent.getItemAtPosition(position);
-
-//                Toast.makeText(getApplicationContext(),String.valueOf(position) , Toast.LENGTH_SHORT).show();
-
                 Intent intent = new Intent(getApplicationContext(), SongActivity.class);
                 intent.putExtra("object_code", String.valueOf(item));
                 startActivity(intent);

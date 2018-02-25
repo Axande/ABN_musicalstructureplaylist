@@ -16,7 +16,6 @@
             android:layout_height="wrap_content"
             android:padding="@dimen/_16dp"
             android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
-
         <!--TO ADD MORE BUTTONS-->
     </LinearLayout>
 
@@ -43,10 +42,7 @@
             android:layout_marginEnd="@dimen/_8dp"
             android:layout_marginStart="@dimen/_8dp"
             />
-
     </LinearLayout>
-
-
 
     <ListView
         android:id="@+id/playlistList"
@@ -54,5 +50,4 @@
         android:layout_height="wrap_content">
 
     </ListView>
-
 </LinearLayout>
