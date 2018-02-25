@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ABN_musical structure(playlist)</string>
+
+    <string name="title">Title</string>
+    <string name="artist">Artist</string>
+    <string name="all_songs">All songs</string>
+    <string name="zero">0</string>
+    <string name="slash">:</string>
+    <string name="favorites">Favorites</string>
+</resources>

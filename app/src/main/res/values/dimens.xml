@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="_8dp">8dp</dimen>
+    <dimen name="_16dp">16dp</dimen>
+    <dimen name="song_art_size">80dp</dimen>
+
+    <dimen name="_24sp">24sp</dimen>
+    <dimen name="_48sp">48sp</dimen>
+
+</resources>
