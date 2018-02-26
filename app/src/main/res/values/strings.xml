@@ -7,4 +7,10 @@
     <string name="zero">0</string>
     <string name="slash">:</string>
     <string name="favorites">Favorites</string>
+
+    <string name="title_playlist">Playlist</string>
+    <string name="title_artist">Search by artist</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="title_song">Song details</string>
+    <string name="title_menu">Main menu</string>
 </resources>

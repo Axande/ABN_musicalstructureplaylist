@@ -16,7 +16,15 @@
             android:padding="@dimen/_16dp"
             android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
 
-        <!--TO ADD MORE BUTTONS-->
+        <TextView
+            android:id="@+id/current_song_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/_16dp"
+            android:text="@string/title_song"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_24sp" />
     </LinearLayout>
 
     <ImageView
@@ -24,6 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:background="@color/colorPrimary"
         android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
 
     <ImageView
@@ -37,9 +46,9 @@
         android:id="@+id/song_display_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/c1"
         android:gravity="center"
         android:padding="@dimen/_16dp"
-        android:background="@color/c1"
         android:text="@string/title"
         android:textSize="@dimen/_24sp" />
 
@@ -59,18 +68,18 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_play_arrow_black_48dp"
-            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_8dp"
             android:layout_marginEnd="@dimen/_16dp"
-            android:layout_marginBottom="@dimen/_8dp"/>
+            android:layout_marginStart="@dimen/_16dp"
+            android:src="@drawable/ic_play_arrow_black_48dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_16dp"
             android:gravity="center"
-            android:layout_marginEnd="@dimen/_16dp">
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/song_display_duration1"

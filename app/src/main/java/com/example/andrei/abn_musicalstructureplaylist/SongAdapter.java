@@ -16,13 +16,11 @@ import java.util.ArrayList;
  * Created by Andrei on 2/25/2018.
  */
 
-public class SongAdapter extends ArrayAdapter<SongClass>{
+public class SongAdapter extends ArrayAdapter<Song> {
 
-    public SongAdapter(@NonNull Context context, ArrayList<SongClass> songs) {
-        /*
-        2nd field is used when populating a single textview
-         */
-        super(context,0 , songs);
+    public SongAdapter(@NonNull Context context, ArrayList<Song> songs) {
+        //2nd field is used when populating a single textview
+        super(context, 0, songs);
     }
 
     /**
@@ -35,13 +33,15 @@ public class SongAdapter extends ArrayAdapter<SongClass>{
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
-        SongClass currentSong = getItem(position);
+        Song currentSong = getItem(position);
 
         View listItem = convertView;
-        if(convertView == null){
+        if (convertView == null) {
+            //inflate the list item layout
             listItem = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
 
+        //update all details
         ImageView mArt = listItem.findViewById(R.id.item_song_icon);
         mArt.setImageResource(currentSong.getArt());
 
@@ -51,6 +51,7 @@ public class SongAdapter extends ArrayAdapter<SongClass>{
         TextView mArtist = listItem.findViewById(R.id.item_song_artist);
         mArtist.setText(currentSong.getArtist());
 
+        //return the created object
         return listItem;
     }
 }

@@ -1,40 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.andrei.abn_musicalstructureplaylist.MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/current_activity_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_16dp"
+            android:text="@string/title_menu"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_24sp" />
+    </LinearLayout>
+
     <TextView
-        android:id="@+id/allSongsActivity"
+        android:id="@+id/all_songs_activity"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:gravity="center"
-        android:textSize="@dimen/_48sp"
         android:background="@color/c1"
-        android:text="@string/all_songs"/>
+        android:gravity="center"
+        android:text="@string/all_songs"
+        android:textSize="@dimen/_48sp" />
 
     <TextView
-        android:id="@+id/favoritesActivity"
+        android:id="@+id/favorites_activity"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:gravity="center"
-        android:textSize="@dimen/_48sp"
         android:background="@color/c2"
-        android:text="@string/favorites"/>
+        android:gravity="center"
+        android:text="@string/favorites"
+        android:textSize="@dimen/_48sp" />
 
     <TextView
-        android:id="@+id/artistActivity"
+        android:id="@+id/artist_activity"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:gravity="center"
-        android:textSize="@dimen/_48sp"
         android:background="@color/c3"
-        android:text="@string/artist"/>
+        android:gravity="center"
+        android:text="@string/artist"
+        android:textSize="@dimen/_48sp" />
 
 </LinearLayout>
